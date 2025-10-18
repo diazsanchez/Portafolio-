@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1760597531123" clover="3.2.0">
+  <project timestamp="1760597531123" name="All files">
+    <metrics statements="99" coveredstatements="32" conditionals="76" coveredconditionals="47" methods="45" coveredmethods="10" elements="220" coveredelements="89" complexity="0" loc="99" ncloc="99" packages="5" files="25" classes="25"/>
+    <package name="src">
+      <metrics statements="29" coveredstatements="17" conditionals="46" coveredconditionals="42" methods="6" coveredmethods="3"/>
+      <file name="App.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\App.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="App.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\App.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="agevalidator.ts" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\agevalidator.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="29" count="19" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="15" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="index.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\index.js">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="loanApproval.ts" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\loanApproval.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="36" coveredconditionals="36" methods="1" coveredmethods="1"/>
+        <line num="50" count="17" type="stmt"/>
+        <line num="53" count="17" type="cond" truecount="6" falsecount="0"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="62" count="16" type="cond" truecount="6" falsecount="0"/>
+        <line num="66" count="6" type="stmt"/>
+        <line num="73" count="10" type="cond" truecount="6" falsecount="0"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="84" count="8" type="cond" truecount="6" falsecount="0"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="95" count="7" type="cond" truecount="6" falsecount="0"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="106" count="6" type="cond" truecount="6" falsecount="0"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="117" count="5" type="stmt"/>
+      </file>
+      <file name="reportWebVitals.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\reportWebVitals.js">
+        <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.assets">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="tareas.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\assets\tareas.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="19" coveredstatements="13" conditionals="16" coveredconditionals="5" methods="11" coveredmethods="6"/>
+      <file name="Footer.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\components\Footer.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="Header.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\components\Header.jsx">
+        <metrics statements="14" coveredstatements="12" conditionals="8" coveredconditionals="5" methods="7" coveredmethods="5"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+      </file>
+      <file name="Layout.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\components\Layout.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="Navbar.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\components\Navbar.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectCard.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\components\ProjectCard.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="projects.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\data\projects.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="projectsData.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\data\projectsData.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="46" coveredstatements="1" conditionals="14" coveredconditionals="0" methods="26" coveredmethods="1"/>
+      <file name="About.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\About.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectDetail.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\ProjectDetail.js">
+        <metrics statements="4" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+      <file name="Projects.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\Projects.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="TareaDetail.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\TareaDetail.jsx">
+        <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="788" count="0" type="stmt"/>
+        <line num="789" count="0" type="stmt"/>
+        <line num="803" count="0" type="stmt"/>
+        <line num="804" count="0" type="stmt"/>
+        <line num="900" count="0" type="stmt"/>
+        <line num="906" count="0" type="stmt"/>
+      </file>
+      <file name="Test.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\Test.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+      <file name="contact.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\contact.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="contact.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\contact.jsx">
+        <metrics statements="18" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+      </file>
+      <file name="home.js" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\home.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="2" type="stmt"/>
+      </file>
+      <file name="home.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\home.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="projects.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\projects.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="103" count="0" type="stmt"/>
+      </file>
+      <file name="tests.jsx" path="C:\Users\maria\OneDrive\Escritorio\Portafolio Aseguramiento\portfolio-aseguramiento\src\pages\tests.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
