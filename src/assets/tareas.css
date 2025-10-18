@@ -1,0 +1,851 @@
+/* ===== CONTENEDOR GENERAL - NUEVO DISEÑO PREMIUM ===== */
+.tareas-container.page-section {
+    padding: calc(var(--spacing-3xl) + 2rem) var(--spacing-xl) !important;
+    background:
+        linear-gradient(135deg,
+            #667eea 0%,
+            #764ba2 25%,
+            #f093fb 50%,
+            #f5576c 75%,
+            #4ecdc4 100%) !important;
+    background-size: 400% 400% !important;
+    animation: gradientShift 15s ease infinite !important;
+    font-family: var(--font-primary) !important;
+    min-height: 100vh !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .tareas-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .tareas-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        rgba(255, 255, 255, 0.1),
+        radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 20%),
+        radial-gradient(circle at 50% 10%, rgba(102, 126, 234, 0.1) 0%, transparent 30%);
+    backdrop-filter: blur(1px);
+    pointer-events: none;
+    z-index: 2;
+    animation: floatingParticles 20s linear infinite;
+  }
+
+  @keyframes floatingParticles {
+    0% {
+      transform: translateY(0px) translateX(0px);
+      opacity: 0.6;
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-10px) translateX(-5px);
+      opacity: 0.7;
+    }
+    75% {
+      transform: translateY(-30px) translateX(15px);
+      opacity: 0.9;
+    }
+    100% {
+      transform: translateY(0px) translateX(0px);
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+      filter: hue-rotate(0deg) brightness(1);
+    }
+    25% {
+      background-position: 100% 25%;
+      filter: hue-rotate(90deg) brightness(1.1);
+    }
+    50% {
+      background-position: 100% 50%;
+      filter: hue-rotate(180deg) brightness(1.2);
+    }
+    75% {
+      background-position: 0% 75%;
+      filter: hue-rotate(270deg) brightness(1.1);
+    }
+    100% {
+      background-position: 0% 50%;
+      filter: hue-rotate(360deg) brightness(1);
+    }
+  }
+
+/* ===== TITULO - NUEVO DISEÑO ESPECTACULAR ===== */
+.tareas-container .page-title {
+    font-size: 3.5rem !important;
+    background:
+        linear-gradient(135deg,
+            #ffffff 0%,
+            #f8f9fa 25%,
+            #e9ecef 50%,
+            #f093fb 75%,
+            #667eea 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    margin-bottom: var(--spacing-3xl) !important;
+    font-weight: 900 !important;
+    font-family: var(--font-heading) !important;
+    line-height: 1 !important;
+    text-shadow:
+        0 0 20px rgba(102, 126, 234, 0.5),
+        0 0 40px rgba(240, 147, 251, 0.3) !important;
+    position: relative !important;
+    z-index: 10;
+    animation: titleGlow 3s ease-in-out infinite alternate !important;
+  }
+
+  .tareas-container .page-title::before {
+    content: 'Mis Tareas';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:
+        linear-gradient(135deg,
+            rgba(102, 126, 234, 1) 0%,
+            rgba(240, 147, 251, 0.9) 25%,
+            rgba(78, 205, 196, 1) 50%,
+            rgba(102, 126, 234, 0.8) 75%,
+            rgba(240, 147, 251, 1) 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.4s ease;
+    animation: titleShimmer 4s ease-in-out infinite;
+  }
+
+  @keyframes titleShimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+      filter: brightness(1) blur(0px);
+    }
+    50% {
+      background-position: 100% 50%;
+      filter: brightness(1.3) blur(1px);
+    }
+  }
+
+  .tareas-container .page-title:hover::before {
+    opacity: 1;
+  }
+
+  @keyframes titleGlow {
+    0% {
+      filter: brightness(1) blur(0px) hue-rotate(0deg);
+      text-shadow:
+        0 0 20px rgba(102, 126, 234, 0.5),
+        0 0 40px rgba(240, 147, 251, 0.3),
+        0 0 60px rgba(78, 205, 196, 0.2);
+    }
+    25% {
+      filter: brightness(1.1) blur(0.5px) hue-rotate(90deg);
+      text-shadow:
+        0 0 25px rgba(240, 147, 251, 0.6),
+        0 0 50px rgba(78, 205, 196, 0.4),
+        0 0 75px rgba(102, 126, 234, 0.3);
+    }
+    50% {
+      filter: brightness(1.2) blur(1px) hue-rotate(180deg);
+      text-shadow:
+        0 0 30px rgba(78, 205, 196, 0.7),
+        0 0 60px rgba(102, 126, 234, 0.5),
+        0 0 90px rgba(240, 147, 251, 0.4);
+    }
+    75% {
+      filter: brightness(1.1) blur(0.5px) hue-rotate(270deg);
+      text-shadow:
+        0 0 25px rgba(102, 126, 234, 0.6),
+        0 0 50px rgba(240, 147, 251, 0.5),
+        0 0 75px rgba(78, 205, 196, 0.3);
+    }
+    100% {
+      filter: brightness(1.3) blur(1.5px) hue-rotate(360deg);
+      text-shadow:
+        0 0 35px rgba(240, 147, 251, 0.8),
+        0 0 70px rgba(78, 205, 196, 0.6),
+        0 0 105px rgba(102, 126, 234, 0.5);
+    }
+  }
+
+  .tareas-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg,
+        var(--primary-color),
+        var(--secondary-color));
+    border-radius: 2px;
+  }
+
+/* ===== GRID DE TARJETAS ===== */
+.tareas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* ===== CONTENEDOR DE TAREAS ===== */
+  .content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content-left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-2xl);
+    padding: 0 var(--spacing-xl);
+  }
+
+/* ===== TARJETA DE TAREAS - NUEVO DISEÑO NEUMORPHISM PREMIUM ===== */
+.tareas-container .project-card {
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.25) 0%,
+            rgba(248, 250, 252, 0.15) 25%,
+            rgba(241, 245, 249, 0.1) 75%,
+            rgba(236, 242, 255, 0.2) 100%
+        ) !important;
+    border-radius: 24px !important;
+    padding: var(--spacing-2xl) !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    min-height: 280px !important;
+    box-shadow:
+        20px 20px 40px rgba(30, 58, 138, 0.15),
+        -20px -20px 40px rgba(255, 255, 255, 0.9),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8),
+        inset 0 -1px 0 rgba(191, 219, 254, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    text-align: left !important;
+    position: relative !important;
+    transform: translateY(0px) !important;
+    animation:
+        cardFloat 8s ease-in-out infinite,
+        cardPulse 4s ease-in-out infinite !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    backdrop-filter: blur(30px) !important;
+    overflow: hidden !important;
+  }
+
+  .tareas-container .project-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        conic-gradient(from 0deg at 50% 50%,
+            rgba(102, 126, 234, 0.3) 0deg,
+            rgba(240, 147, 251, 0.2) 90deg,
+            rgba(78, 205, 196, 0.3) 180deg,
+            rgba(102, 126, 234, 0.3) 270deg,
+            transparent 360deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 50%;
+  }
+
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--primary-color) 0%,
+        var(--secondary-color) 50%,
+        var(--accent-color) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .project-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle,
+        rgba(102, 126, 234, 0.1) 0%,
+        transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  @keyframes cardFloat {
+    0%, 100% {
+      transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+      box-shadow:
+        20px 20px 40px rgba(30, 58, 138, 0.15),
+        -20px -20px 40px rgba(255, 255, 255, 0.9);
+    }
+    25% {
+      transform: translateY(-8px) rotateX(2deg) rotateY(3deg);
+      box-shadow:
+        25px 25px 50px rgba(30, 58, 138, 0.2),
+        -15px -15px 35px rgba(255, 255, 255, 0.95);
+    }
+    50% {
+      transform: translateY(-15px) rotateX(3deg) rotateY(-2deg);
+      box-shadow:
+        30px 30px 60px rgba(30, 58, 138, 0.25),
+        -10px -10px 30px rgba(255, 255, 255, 1);
+    }
+    75% {
+      transform: translateY(-8px) rotateX(2deg) rotateY(-3deg);
+      box-shadow:
+        25px 25px 50px rgba(30, 58, 138, 0.2),
+        -15px -15px 35px rgba(255, 255, 255, 0.95);
+    }
+  }
+
+  @keyframes cardPulse {
+    0%, 100% {
+      border-color: rgba(255, 255, 255, 0.4);
+      filter: brightness(1) saturate(1);
+    }
+    50% {
+      border-color: rgba(102, 126, 234, 0.5);
+      filter: brightness(1.1) saturate(1.2);
+    }
+  }
+
+ /* ===== EFECTO HOVER MODERNO ===== */
+ .tareas-container .project-card:hover {
+    transform: translateY(-20px) scale(1.05) rotateX(5deg) !important;
+    box-shadow:
+        0 40px 80px rgba(30, 58, 138, 0.3),
+        0 20px 40px rgba(240, 147, 251, 0.2),
+        0 10px 20px rgba(78, 205, 196, 0.15),
+        inset 0 2px 0 rgba(255, 255, 255, 0.9) !important;
+    border-color: rgba(102, 126, 234, 0.6) !important;
+    animation: cardHover 0.6s ease-out !important;
+  }
+
+  .tareas-container .project-card:hover::before {
+    opacity: 0.8 !important;
+    transform: rotate(180deg) !important;
+  }
+
+  .tareas-container .project-card:hover::after {
+    opacity: 0.6 !important;
+    transform: translate(-50%, -50%) scale(1.5) !important;
+  }
+
+  @keyframes cardHover {
+    0% {
+      transform: translateY(-12px) scale(1.02) rotateX(2deg);
+    }
+    50% {
+      transform: translateY(-25px) scale(1.08) rotateX(8deg);
+    }
+    100% {
+      transform: translateY(-20px) scale(1.05) rotateX(5deg);
+    }
+  }
+
+  .tareas-container .project-card h2 {
+    font-size: 1.3rem !important;
+    background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-700) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    margin-bottom: var(--spacing-sm) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    font-family: var(--font-heading) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .tareas-container .project-card p {
+    color: var(--gray-700) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    font-family: var(--font-primary) !important;
+    opacity: 0.9 !important;
+    transition: opacity 0.3s ease !important;
+  }
+
+  .tareas-container .project-card:hover h2 {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+  }
+
+  .tareas-container .project-card:hover p {
+    opacity: 1 !important;
+    color: var(--gray-800) !important;
+  }
+
+/* ===== CONTENIDO ===== */
+.tarea-card h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+ .tarea-card p {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+ .tarea-card .fecha {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+ /* ===== ESTADOS ===== */
+ .tarea-card .estado {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+ /* Colores de estados */
+ .tarea-card.completada .estado {
+    background: #d4edda;
+    color: #155724;
+  }
+
+ .tarea-card.en-progreso .estado {
+    background: #fff3cd;
+    color: #856404;
+  }
+
+ .tarea-card.pendiente .estado {
+    background: #f8d7da;
+    color: #721c24;
+  }
+
+/* ===== ANIMACIÓN DE ENTRADA ===== */
+.tarea-card {
+    opacity: 1;
+  }
+
+/* ===== HEADER DEL DASHBOARD ===== */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .dashboard-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+/* ===== MÉTRICAS DEL DASHBOARD ===== */
+.dashboard-metrics {
+    display: none;
+  }
+
+/* ===== SECCIONES DEL DASHBOARD ===== */
+.tasks-sections {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+/* ===== GRID DE TARJETAS MODERNO ===== */
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+ /* ===== TARJETA DE TAREA MODERNA ===== */
+ .task-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 180px;
+  }
+
+ /* ===== EFECTO HOVER MODERNO ===== */
+ .task-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+/* ===== HEADER DE LA TARJETA ===== */
+.task-header {
+    display: block;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .task-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .task-id {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: normal;
+    background: #f5f5f5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+
+/* ===== STATUS BADGE ===== */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .status-badge.completed {
+    background: #d4edda;
+    color: #155724;
+  }
+
+  .status-badge.in-progress {
+    background: #fff3cd;
+    color: #856404;
+  }
+
+  .status-badge.pending {
+    background: #f8d7da;
+    color: #721c24;
+  }
+
+/* ===== CONTENIDO DE LA TARJETA ===== */
+.task-content {
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+
+  .task-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .task-meta {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+
+  .task-date {
+    color: #666;
+    font-weight: normal;
+  }
+
+  .task-date::before {
+    content: '📅';
+    font-size: 0.8rem;
+  }
+
+  .task-priority {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .priority-high {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+
+  .priority-medium {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+  }
+
+  .priority-low {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+
+/* ===== PROGRESS BAR ===== */
+.task-progress {
+    margin-bottom: 1rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: #007bff;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+
+  .progress-text {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: right;
+    font-weight: normal;
+  }
+
+/* ===== ACCIONES DE LA TARJETA ===== */
+.task-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .task-action-btn {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    min-height: 35px;
+  }
+
+  .task-action-btn.primary {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  .task-action-btn.primary:hover {
+    background: #0056b3;
+  }
+
+  .task-action-btn.secondary {
+    background: #f8f9fa;
+    color: #333;
+    border-color: #ddd;
+  }
+
+  .task-action-btn.secondary:hover {
+    background: #e9ecef;
+  }
+
+/* ===== CATEGORÍAS ===== */
+.task-category {
+    display: inline-block;
+    background: #f5f5f5;
+    color: #666;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .category-icon {
+    font-size: 0.7rem;
+  }
+
+/* ===== RESPONSIVE DASHBOARD ===== */
+@media (max-width: 1200px) {
+    .tareas-container {
+      padding: 40px 15px;
+    }
+
+    .tareas-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+
+    .tasks-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+  }
+
+ @media (max-width: 768px) {
+    .tareas-container {
+      padding: 30px 10px;
+    }
+
+    .tareas-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .content-left {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing-xl);
+      padding: 0 var(--spacing-md);
+      margin-top: var(--spacing-xl);
+    }
+
+    .project-card {
+      min-height: 200px !important;
+      padding: var(--spacing-lg) !important;
+      max-width: 100%;
+    }
+
+    .tasks-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .task-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .task-card {
+      min-height: 160px;
+    }
+  }
+
+ @media (max-width: 480px) {
+    .tareas-container {
+      padding: 20px 5px;
+    }
+
+    .tareas-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .content-left {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+      padding: 0 var(--spacing-md);
+      margin-top: var(--spacing-lg);
+    }
+
+    .project-card {
+      min-height: 180px !important;
+      padding: var(--spacing-md) !important;
+      max-width: 100%;
+    }
+
+    .project-card h2 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    .task-card {
+      padding: 1rem;
+      min-height: 140px;
+    }
+
+    .task-title {
+      font-size: 1rem;
+    }
+
+    .task-action-btn {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.75rem;
+    }
+  }

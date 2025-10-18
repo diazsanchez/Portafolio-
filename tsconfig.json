@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // Compilación y módulos
+    "target": "ES2020",               // Versión de JS a compilar
+    "module": "ESNext",               // Usar ES Modules
+    "moduleResolution": "node",       // Resolución de módulos estilo Node
+    "esModuleInterop": true,          // Permite importaciones comunes
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,                   // Todas las reglas estrictas
+    "isolatedModules": true,          // Cada archivo como módulo independiente
+    "declaration": true,              // Genera archivos .d.ts
+    "sourceMap": true,                // Genera .map para depuración
+
+    // Opciones recomendadas
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*"],            // Carpeta de código fuente
+  "exclude": ["node_modules", "dist"] // Ignorar node_modules y dist
+}

@@ -1,0 +1,153 @@
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-title span {
+  color: #6366f1;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ✨ Animación de aparición */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌈 Botones */
+.btn-primary {
+  padding: 0.85rem 2rem;
+  background-color: #6366f1;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  padding: 0.85rem 2rem;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #6366f1;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 🧩 Contenedor principal */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+/* 📝 Columna izquierda */
+.content-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* 🎨 Columna derecha */
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content-right img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-right img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* 📦 Tarjetas de tareas/proyectos */
+.project-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content-right img {
+    max-width: 100%;
+  }
+
+  .page-title {
+    font-size: 2.4rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,108 @@
+/* Layout principal moderno y profesional */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.app-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="50" cy="50" r="1" fill="%23e2e8f0" opacity="0.3"/><circle cx="150" cy="100" r="1.5" fill="%23cbd5e1" opacity="0.2"/><circle cx="100" cy="150" r="1" fill="%23f1f5f9" opacity="0.4"/><circle cx="25" cy="175" r="0.8" fill="%23e2e8f0" opacity="0.3"/><circle cx="175" cy="25" r="1.2" fill="%23cbd5e1" opacity="0.2"/></svg>');
+  pointer-events: none;
+  z-index: -1;
+}
+
+.main-content {
+  flex: 1;
+  background: var(--gray-50);
+  position: relative;
+}
+
+/* Animaciones de fondo sutiles */
+@keyframes backgroundFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus visible mejorado */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* Encabezado */
+header {
+   background: linear-gradient(90deg, #4facfe, #00f2fe);
+   padding: 1rem 2rem;
+   color: white;
+   text-align: center;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+ }
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Menú de navegación */
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffea00;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+main p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Footer */
+footer {
+   background: #222;
+   color: #bbb;
+   padding: 1rem;
+   text-align: center;
+   margin-top: 2rem;
+   font-size: 0.9rem;
+ }

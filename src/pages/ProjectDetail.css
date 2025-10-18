@@ -1,0 +1,65 @@
+.detail-container {
+  display: flex;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar a {
+  display: block;
+  color: #0077cc;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #004a99;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.content h2 {
+  margin-top: 30px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.content table th,
+.content table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
